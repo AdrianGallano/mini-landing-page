@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap');
 /* variables */
 :root{
     --hero-footer-background: #1F2937;
@@ -6,6 +7,7 @@
     --hero-main-text-weigth: bolder;
     --hero-secondary-text-color: #e5e7ebdc;
     --hero-secondary-text-size: 18px;
+    --hero-secondary-text-weight: 400;
     --header-logo-text-color: #f9faf8;
     --header-logo-text-size: 24px;
     --button-color: #3882f6;
@@ -100,6 +102,7 @@ body{
 .sub-text{
     font-size: var(--hero-secondary-text-size);
     color: var(--hero-secondary-text-color);
+    font-weight: var(--hero-secondary-text-weight);
 }
 
 .header-button{
@@ -147,4 +150,32 @@ body{
     width: 120px;
     border: 2px solid var(--button-color) ;
     border-radius: 10px;
+}
+
+/* quote section */
+.quote-section{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--quote-section-background-color);
+}
+
+.quote-section-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--quote-section-text-color);
+    font-weight: var(--quote-section-text-weight);
+    width: 60%;
+}
+
+.quote{
+    font-size: var(--quote-section-text-size);
+}
+
+.whoami{
+    font-size: 24px;
+    align-self: flex-end;
+    font-weight: bolder;
 }
