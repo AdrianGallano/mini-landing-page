@@ -105,7 +105,7 @@ body{
     font-weight: var(--hero-secondary-text-weight);
 }
 
-.header-button{
+.button{
     background-color: var(--button-color);
     border: none;
     border-radius: 5px;
@@ -178,4 +178,41 @@ body{
     font-size: 24px;
     align-self: flex-end;
     font-weight: bolder;
+}
+
+/* Contact */
+.contact{
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card{
+    display: flex;
+    background-color: var(--button-color);
+    align-items: center;
+    border-radius: 10px;
+    padding: 2.5em 5em;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.contact-content{
+    color: white;
+}
+
+.white-border{
+    border: 2px solid white;
+}
+
+/* footer */
+footer{
+    display: flex;
+    background-color: var(--hero-footer-background);
+    color: var(--hero-main-text-color);
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    
 }
