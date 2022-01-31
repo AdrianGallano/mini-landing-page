@@ -1,0 +1,52 @@
+/* variables */
+:root{
+    --hero-footer-background: #1F2937;
+    --hero-main-text-color: #f9faf8;
+    --hero-main-text-size: 48px;
+    --hero-main-text-weigth: bolder;
+    --hero-secondary-text-color: #e5e7eb;
+    --hero-secondary-text-size: 18px;
+}
+
+/* General */
+body{
+    font-family: Roboto, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header{
+    background-color: var(--hero-footer-background);
+    padding: 1em 8em;
+    height: 80vh;
+}
+
+/* Navigation */
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: var(--hero-secondary-text-color);
+    font-size: var(--hero-secondary-text-color);
+}
+
+/* Content */
