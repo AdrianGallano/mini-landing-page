@@ -4,8 +4,18 @@
     --hero-main-text-color: #f9faf8;
     --hero-main-text-size: 48px;
     --hero-main-text-weigth: bolder;
-    --hero-secondary-text-color: #e5e7eb;
+    --hero-secondary-text-color: #e5e7ebdc;
     --hero-secondary-text-size: 18px;
+    --header-logo-text-color: #f9faf8;
+    --header-logo-text-size: 24px;
+    --button-color: #3882f6;
+    --information-header-text-size: 36px;
+    --information-header-text-weight: bolder;
+    --information-header-text-color: #1f2937;
+    --quote-section-background-color: #e5e7eb;
+    --quote-section-text-color: #1F2937;
+    --quote-section-text-size: 36px; 
+    --quote-section-text-weight: lighter;
 }
 
 /* General */
@@ -21,9 +31,12 @@ body{
 
 /* Header */
 .header{
+    display: flex;
+    flex-direction: column;
+
     background-color: var(--hero-footer-background);
-    padding: 1em 8em;
-    height: 80vh;
+    padding: 1em 10em;
+    height: 75vh;
 }
 
 /* Navigation */
@@ -50,3 +63,88 @@ body{
 }
 
 /* Content */
+.header-content{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 3em;
+}
+
+.content-one,
+.content-two{
+    flex: 1;
+}
+
+.content-one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.content-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    height: 50%;
+    color: var(--hero-secondary-text-color);
+}
+
+.head-text{
+    color: var(--hero-main-text-color);
+    font-size: var(--hero-main-text-size);
+    font-weight: var(--hero-main-text-weigth);
+}
+
+.sub-text{
+    font-size: var(--hero-secondary-text-size);
+    color: var(--hero-secondary-text-color);
+}
+
+.header-button{
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 5px;
+    padding: .5em 2em;
+    color: var(--hero-main-text-color);
+    font-weight: var(--hero-main-text-weigth);
+}
+
+/*  Information */
+.information{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    gap: 3em;
+    padding: 2em 0;
+    color: var(--information-header-text-color);
+}
+
+.information h1{
+    font-size: var(--information-header-text-size);
+    font-weight: var(--information-header-text-weight);
+}
+
+.information-content{
+    display: flex;
+    width: 50%;
+    gap: 1em;
+}
+
+.information-content-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: .5em;
+
+}
+
+.info-box{
+    height: 120px;
+    width: 120px;
+    border: 2px solid var(--button-color) ;
+    border-radius: 10px;
+}
