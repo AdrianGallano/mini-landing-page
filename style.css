@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,300&display=swap');
 /* variables */
 :root{
-    --hero-footer-background: #1F2937;
-    --hero-main-text-color: #f9faf8;
+    --body-background-color: #ffffff;
+    --hero-footer-background: #11261A;
+    --hero-main-text-color: #ffffff;
     --hero-main-text-size: 48px;
     --hero-main-text-weigth: bolder;
-    --hero-secondary-text-color: #e5e7ebdc;
+    --hero-secondary-text-color: #ffffff;
     --hero-secondary-text-size: 18px;
     --hero-secondary-text-weight: 400;
     --header-logo-text-color: #f9faf8;
     --header-logo-text-size: 24px;
-    --button-color: #3882f6;
+    --button-color: #11261A;
     --information-header-text-size: 36px;
     --information-header-text-weight: bolder;
-    --information-header-text-color: #1f2937;
-    --quote-section-background-color: #e5e7eb;
-    --quote-section-text-color: #1F2937;
+    --information-header-text-color: #11261A;
+    --quote-section-background-color: #8C451C;
+    --quote-section-text-color: #ffffff;
     --quote-section-text-size: 36px; 
     --quote-section-text-weight: lighter;
 }
@@ -27,6 +28,7 @@ html{
 
 body{
     font-family: Roboto, sans-serif;
+    background-color: var(--body-background-color);
 }
 
 *{
@@ -53,7 +55,7 @@ body{
 }
 
 .logo{
-    color: white;
+    height: 40px;
 }
 
 .nav-links{
@@ -67,6 +69,7 @@ body{
     color: var(--hero-secondary-text-color);
     font-size: var(--hero-secondary-text-color);
 }
+
 
 /* Content */
 .header-content{
@@ -92,9 +95,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: grey;
     height: 50%;
     color: var(--hero-secondary-text-color);
+    
+}
+
+.content-two img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .head-text{
@@ -118,6 +129,10 @@ body{
     font-weight: var(--hero-main-text-weigth);
 }
 
+.b2-color{
+    background-color: #ffffff;
+    color: var(--hero-footer-background);
+}
 /*  Information */
 .information{
     display: flex;
@@ -136,7 +151,6 @@ body{
 
 .information-content{
     display: flex;
-    width: 50%;
     gap: 1em;
 }
 
@@ -145,6 +159,7 @@ body{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: 130px;
     gap: .5em;
 
 }
@@ -152,8 +167,14 @@ body{
 .info-box{
     height: 120px;
     width: 120px;
-    border: 2px solid var(--button-color) ;
     border-radius: 10px;
+}
+
+.info-box img{
+    object-fit: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
 }
 
 /* quote section */
@@ -176,6 +197,7 @@ body{
 
 .quote{
     font-size: var(--quote-section-text-size);
+    text-align: center;
 }
 
 .whoami{
