@@ -1,2 +1,2 @@
 # odin-landing-page
-<i>yeah?</i>
+<img src="./images/page.png">
